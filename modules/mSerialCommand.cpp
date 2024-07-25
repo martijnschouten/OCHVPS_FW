@@ -183,7 +183,7 @@ float mSerialCommand::parseFloatArg() {
     //Serial.println("[WARN]: unsafe method: mSerialCommand::parseDoubleArg() - must be corrected");
     char* arg;
     arg = next();
-    return atof(arg);
+    return atoff(arg);
 }
 
 long mSerialCommand::parseLongArg() {

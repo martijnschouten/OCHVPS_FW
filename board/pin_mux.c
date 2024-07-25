@@ -7,34 +7,36 @@
 /*
  * TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
 !!GlobalInfo
-product: Pins v13.0
+product: Pins v11.0
 processor: MK60DN256xxx10
 package_id: MK60DN256VLQ10
 mcu_data: ksdk2_0
-processor_version: 13.0.1
+processor_version: 11.0.1
 pin_labels:
 - {pin_num: '1', pin_signal: ADC1_SE4a/PTE0/SPI1_PCS1/UART1_TX/SDHC0_D1/I2C1_SDA/RTC_CLKOUT, label: ND_001, identifier: ND_001}
+- {pin_num: '144', pin_signal: PTD15/SPI2_PCS1/SDHC0_D7/FB_A23, label: HB_HG8, identifier: HB_HG8}
+- {pin_num: '143', pin_signal: PTD14/SPI2_SIN/SDHC0_D6/FB_A22, label: HB_LG8, identifier: HB_LG8}
 - {pin_num: '2', pin_signal: ADC1_SE5a/PTE1/LLWU_P0/SPI1_SOUT/UART1_RX/SDHC0_D0/I2C1_SCL/SPI1_SIN, label: ND_002, identifier: ND_002}
 - {pin_num: '3', pin_signal: ADC1_SE6a/PTE2/LLWU_P1/SPI1_SCK/UART1_CTS_b/SDHC0_DCLK, label: ND_003, identifier: ND_003}
 - {pin_num: '4', pin_signal: ADC1_SE7a/PTE3/SPI1_SIN/UART1_RTS_b/SDHC0_CMD/SPI1_SOUT, label: ND_004, identifier: ND_004}
-- {pin_num: '5', pin_signal: VDD5, label: VDD_005, identifier: VDD_005}
-- {pin_num: '6', pin_signal: VSS6, label: VSS_006, identifier: VSS_006}
 - {pin_num: '7', pin_signal: PTE4/LLWU_P2/SPI1_PCS0/UART3_TX/SDHC0_D3, label: ND_007, identifier: ND_007}
 - {pin_num: '8', pin_signal: PTE5/SPI1_PCS2/UART3_RX/SDHC0_D2, label: ND_008, identifier: ND_008}
 - {pin_num: '9', pin_signal: PTE6/SPI1_PCS3/UART3_CTS_b/I2S0_MCLK/USB_SOF_OUT, label: ND_009, identifier: ND_009}
 - {pin_num: '10', pin_signal: PTE7/UART3_RTS_b/I2S0_RXD0, label: ND_010, identifier: ND_010}
 - {pin_num: '11', pin_signal: PTE8/I2S0_RXD1/UART5_TX/I2S0_RX_FS, label: ND_011, identifier: ND_011}
-- {pin_num: '12', pin_signal: PTE9/I2S0_TXD1/UART5_RX/I2S0_RX_BCLK, label: PS_SW_STATE, identifier: PS_SW_STATE}
+- {pin_num: '12', pin_signal: PTE9/I2S0_TXD1/UART5_RX/I2S0_RX_BCLK, label: ND_012, identifier: ND_012}
 - {pin_num: '13', pin_signal: PTE10/UART5_CTS_b/I2S0_TXD0, label: ND_013, identifier: ND_013}
 - {pin_num: '14', pin_signal: PTE11/UART5_RTS_b/I2S0_TX_FS, label: ND_014, identifier: ND_014}
 - {pin_num: '15', pin_signal: PTE12/I2S0_TX_BCLK, label: ND_015, identifier: ND_015}
+- {pin_num: '5', pin_signal: VDD5, label: VDD_005, identifier: VDD_005}
+- {pin_num: '6', pin_signal: VSS6, label: VSS_006, identifier: VSS_006}
 - {pin_num: '16', pin_signal: VDD16, label: VDD_016, identifier: VDD_016}
 - {pin_num: '17', pin_signal: VSS17, label: VSS_017, identifier: VSS_017}
 - {pin_num: '18', pin_signal: VSS22, label: VSS_018, identifier: VSS_018}
 - {pin_num: '19', pin_signal: USB0_DP, label: USB_P, identifier: USB_P}
 - {pin_num: '20', pin_signal: USB0_DM, label: USB_N, identifier: USB_N}
-- {pin_num: '21', pin_signal: VOUT33, label: VOUT33, identifier: VOUT33}
 - {pin_num: '22', pin_signal: VREGIN, label: USB_VBUS, identifier: USB_VBUS}
+- {pin_num: '21', pin_signal: VOUT33, label: VOUT33, identifier: VOUT33}
 - {pin_num: '23', pin_signal: ADC0_DP1, label: ND_023, identifier: ND_023}
 - {pin_num: '24', pin_signal: ADC0_DM1, label: ND_024, identifier: ND_024}
 - {pin_num: '25', pin_signal: ADC1_DP1, label: ND_025, identifier: ND_025}
@@ -44,9 +46,9 @@ pin_labels:
 - {pin_num: '29', pin_signal: PGA1_DP/ADC1_DP0/ADC0_DP3, label: ND_029, identifier: ND_029}
 - {pin_num: '30', pin_signal: PGA1_DM/ADC1_DM0/ADC0_DM3, label: ND_030, identifier: ND_030}
 - {pin_num: '31', pin_signal: VDDA, label: VDDA_031, identifier: VDDA_031}
-- {pin_num: '32', pin_signal: VREFH, label: VREFH_032, identifier: VFREH_032}
-- {pin_num: '33', pin_signal: VREFL, label: VREFL_033, identifier: VREFL_033}
 - {pin_num: '34', pin_signal: VSSA, label: VSSA_034, identifier: VSSA_034}
+- {pin_num: '32', pin_signal: VREFH, label: VREFH_032, identifier: VREFH_032}
+- {pin_num: '33', pin_signal: VREFL, label: VREFL_033, identifier: VREFL_033}
 - {pin_num: '35', pin_signal: ADC1_SE16/CMP2_IN2/ADC0_SE22, label: ND_035, identifier: ND_035}
 - {pin_num: '36', pin_signal: ADC0_SE16/CMP1_IN2/ADC0_SE21, label: ND_036, identifier: ND_036}
 - {pin_num: '37', pin_signal: VREF_OUT/CMP1_IN5/CMP0_IN5/ADC1_SE18, label: ND_037, identifier: ND_037}
@@ -54,15 +56,15 @@ pin_labels:
 - {pin_num: '39', pin_signal: DAC1_OUT/CMP0_IN4/CMP2_IN3/ADC1_SE23, label: ND_039, identifier: ND_039}
 - {pin_num: '40', pin_signal: XTAL32, label: ND_040, identifier: ND_040}
 - {pin_num: '41', pin_signal: EXTAL32, label: ND_041, identifier: ND_041}
-- {pin_num: '42', pin_signal: VBAT, label: VBAT_042, identifier: VBAT_042}
-- {pin_num: '43', pin_signal: VDD54, label: VDD_043, identifier: VDD_043}
-- {pin_num: '44', pin_signal: VSS55, label: VSS_044, identifier: VSS_044}
+- {pin_num: '42', pin_signal: VBAT, label: VBAT_42, identifier: VBAT_42}
+- {pin_num: '43', pin_signal: VDD54, label: VDD54_043, identifier: VDD54_043}
+- {pin_num: '44', pin_signal: VSS55, label: VSS55_044, identifier: VSS55_044}
 - {pin_num: '45', pin_signal: ADC0_SE17/EXTAL1/PTE24/CAN1_TX/UART4_TX/EWM_OUT_b, label: PS_12V_VM, identifier: PS_12V_VM}
 - {pin_num: '46', pin_signal: ADC0_SE18/XTAL1/PTE25/CAN1_RX/UART4_RX/EWM_IN, label: PS_HV_VM, identifier: PS_HV_VM}
 - {pin_num: '47', pin_signal: PTE26/ENET_1588_CLKIN/UART4_CTS_b/RTC_CLKOUT/USB_CLKIN, label: ND_047, identifier: ND_047}
 - {pin_num: '48', pin_signal: PTE27/UART4_RTS_b, label: ND_048, identifier: ND_048}
 - {pin_num: '49', pin_signal: PTE28, label: ND_049, identifier: ND_049}
-- {pin_num: '50', pin_signal: TSI0_CH1/PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK, label: JTAG_CLK, identifier: JTAG_CLK}
+- {pin_num: '50', pin_signal: TSI0_CH1/PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK, label: JTAG_TCLK, identifier: JTAG_TCLK}
 - {pin_num: '51', pin_signal: TSI0_CH2/PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI, label: JTAG_TDI, identifier: JTAG_TDI}
 - {pin_num: '52', pin_signal: TSI0_CH3/PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO, label: JTAG_TDO, identifier: JTAG_TDO}
 - {pin_num: '53', pin_signal: TSI0_CH4/PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO, label: JTAG_TMS, identifier: JTAG_TMS}
@@ -77,7 +79,7 @@ pin_labels:
 - {pin_num: '62', pin_signal: PTA10/FTM2_CH0/MII0_RXD2/FTM2_QD_PHA/TRACE_D0, label: ND_062, identifier: ND_062}
 - {pin_num: '63', pin_signal: PTA11/FTM2_CH1/MII0_RXCLK/FTM2_QD_PHB, label: ND_063, identifier: ND_063}
 - {pin_num: '64', pin_signal: CMP2_IN0/PTA12/CAN0_TX/FTM1_CH0/RMII0_RXD1/MII0_RXD1/I2S0_TXD0/FTM1_QD_PHA, label: ND_064, identifier: ND_064}
-- {pin_num: '65', pin_signal: CMP2_IN1/PTA13/LLWU_P4/CAN0_RX/FTM1_CH1/RMII0_RXD0/MII0_RXD0/I2S0_TX_FS/FTM1_QD_PHB, label: ND_065, identifier: ND_065}
+- {pin_num: '65', pin_signal: CMP2_IN1/PTA13/LLWU_P4/CAN0_RX/FTM1_CH1/RMII0_RXD0/MII0_RXD0/I2S0_TX_FS/FTM1_QD_PHB, label: PS_HV_EN, identifier: PS_HV_EN}
 - {pin_num: '66', pin_signal: PTA14/SPI0_PCS0/UART0_TX/RMII0_CRS_DV/MII0_RXDV/I2S0_RX_BCLK/I2S0_TXD1, label: USB_UART_TX, identifier: USB_UART_TX}
 - {pin_num: '67', pin_signal: PTA15/SPI0_SCK/UART0_RX/RMII0_TXEN/MII0_TXEN/I2S0_RXD0, label: USB_UART_RX, identifier: USB_UART_RX}
 - {pin_num: '68', pin_signal: PTA16/SPI0_SOUT/UART0_CTS_b/UART0_COL_b/RMII0_TXD0/MII0_TXD0/I2S0_RX_FS/I2S0_RXD1, label: ND_068, identifier: ND_068}
@@ -110,10 +112,10 @@ pin_labels:
 - {pin_num: '95', pin_signal: TSI0_CH9/PTB16/SPI1_SOUT/UART0_RX/FB_AD17/EWM_IN, label: ND_095, identifier: ND_095}
 - {pin_num: '96', pin_signal: TSI0_CH10/PTB17/SPI1_SIN/UART0_TX/FB_AD16/EWM_OUT_b, label: ND_096, identifier: ND_096}
 - {pin_num: '97', pin_signal: TSI0_CH11/PTB18/CAN0_TX/FTM2_CH0/I2S0_TX_BCLK/FB_AD15/FTM2_QD_PHA, label: ND_097, identifier: ND_097}
-- {pin_num: '98', pin_signal: TSI0_CH12/PTB19/CAN0_RX/FTM2_CH1/I2S0_TX_FS/FB_OE_b/FTM2_QD_PHB, label: ND_098, identifier: ND_98}
+- {pin_num: '98', pin_signal: TSI0_CH12/PTB19/CAN0_RX/FTM2_CH1/I2S0_TX_FS/FB_OE_b/FTM2_QD_PHB, label: ND_098, identifier: ND_098}
 - {pin_num: '99', pin_signal: PTB20/SPI2_PCS0/FB_AD31/CMP0_OUT, label: ND_099, identifier: ND_099}
 - {pin_num: '100', pin_signal: PTB21/SPI2_SCK/FB_AD30/CMP1_OUT, label: ND_100, identifier: ND_100}
-- {pin_num: '101', pin_signal: PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT, label: ND_101, identifier: ND_01}
+- {pin_num: '101', pin_signal: PTB22/SPI2_SOUT/FB_AD29/CMP2_OUT, label: ND_101, identifier: ND_101}
 - {pin_num: '102', pin_signal: PTB23/SPI2_SIN/SPI0_PCS5/FB_AD28, label: ND_102, identifier: ND_102}
 - {pin_num: '103', pin_signal: ADC0_SE14/TSI0_CH13/PTC0/SPI0_PCS4/PDB0_EXTRG/FB_AD14/I2S0_TXD1, label: ND_103, identifier: ND_103}
 - {pin_num: '104', pin_signal: ADC0_SE15/TSI0_CH14/PTC1/LLWU_P6/SPI0_PCS3/UART1_RTS_b/FTM0_CH0/FB_AD13/I2S0_TXD0, label: ND_104, identifier: ND_104}
@@ -125,13 +127,13 @@ pin_labels:
 - {pin_num: '110', pin_signal: PTC5/LLWU_P9/SPI0_SCK/LPTMR0_ALT2/I2S0_RXD0/FB_AD10/CMP0_OUT, label: ND_110, identifier: ND_110}
 - {pin_num: '111', pin_signal: CMP0_IN0/PTC6/LLWU_P10/SPI0_SOUT/PDB0_EXTRG/I2S0_RX_BCLK/FB_AD9/I2S0_MCLK, label: ND_111, identifier: ND_111}
 - {pin_num: '112', pin_signal: CMP0_IN1/PTC7/SPI0_SIN/USB_SOF_OUT/I2S0_RX_FS/FB_AD8, label: ND_112, identifier: ND_112}
-- {pin_num: '113', pin_signal: ADC1_SE4b/CMP0_IN2/PTC8/I2S0_MCLK/FB_AD7, label: PS_HV_EN, identifier: PS_HV_EN}
-- {pin_num: '114', pin_signal: ADC1_SE5b/CMP0_IN3/PTC9/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0, label: PS_12V_EN, identifier: PS_12V_EN}
+- {pin_num: '113', pin_signal: ADC1_SE4b/CMP0_IN2/PTC8/I2S0_MCLK/FB_AD7, label: ND_113, identifier: ND_113}
+- {pin_num: '114', pin_signal: ADC1_SE5b/CMP0_IN3/PTC9/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0, label: PS_SW_STATE, identifier: PS_SW_STATE}
 - {pin_num: '115', pin_signal: ADC1_SE6b/PTC10/I2C1_SCL/I2S0_RX_FS/FB_AD5, label: PS_12V_SCL, identifier: PS_12V_SCL}
 - {pin_num: '116', pin_signal: ADC1_SE7b/PTC11/LLWU_P11/I2C1_SDA/I2S0_RXD1/FB_RW_b, label: PS_12V_SDA, identifier: PS_12V_SDA}
-- {pin_num: '117', pin_signal: PTC12/UART4_RTS_b/FB_AD27, label: ND_117, identifier: ND_117}
+- {pin_num: '117', pin_signal: PTC12/UART4_RTS_b/FB_AD27, label: PS_12V_EN, identifier: PS_12V_EN}
 - {pin_num: '118', pin_signal: PTC13/UART4_CTS_b/FB_AD26, label: ND_118, identifier: ND_118}
-- {pin_num: '119', pin_signal: PTC14/UART4_RX/FB_AD25, label: ND_119, identifier: ND_119}
+- {pin_num: '119', pin_signal: PTC14/UART4_RX/FB_AD25, label: ND_1119, identifier: ND_1119}
 - {pin_num: '120', pin_signal: PTC15/UART4_TX/FB_AD24, label: ND_120, identifier: ND_120}
 - {pin_num: '121', pin_signal: VSS137, label: VSS_121, identifier: VSS_121}
 - {pin_num: '122', pin_signal: VDD138, label: VDD_122, identifier: VDD_122}
@@ -140,23 +142,21 @@ pin_labels:
 - {pin_num: '125', pin_signal: PTC18/UART3_RTS_b/ENET0_1588_TMR2/FB_TBST_b/FB_CS2_b/FB_BE15_8_b, label: ND_125, identifier: ND_125}
 - {pin_num: '126', pin_signal: PTC19/UART3_CTS_b/ENET0_1588_TMR3/FB_CS3_b/FB_BE7_0_b/FB_TA_b, label: ND_126, identifier: ND_126}
 - {pin_num: '127', pin_signal: PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FB_ALE/FB_CS1_b/FB_TS_b, label: HB_LG1, identifier: HB_LG1}
-- {pin_num: '129', pin_signal: PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FB_AD4, label: HB_LG2, identifier: HB_LG2}
-- {pin_num: '131', pin_signal: PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN, label: HB_LG3, identifier: HB_LG3}
-- {pin_num: '133', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0, label: HB_LG4, identifier: HB_LG4}
-- {pin_num: '137', pin_signal: PTD8/I2C0_SCL/UART5_RX/FB_A16, label: HB_LG5, identifier: HB_LG5}
-- {pin_num: '139', pin_signal: PTD10/UART5_RTS_b/FB_A18, label: HB_LG6, identifier: HB_LG6}
-- {pin_num: '141', pin_signal: PTD12/SPI2_SCK/SDHC0_D4/FB_A20, label: HB_LG7, identifier: HB_LG7}
-- {pin_num: '143', pin_signal: PTD14/SPI2_SIN/SDHC0_D6/FB_A22, label: HB_LG8, identifier: HB_LG8}
-- {pin_num: '144', pin_signal: PTD15/SPI2_PCS1/SDHC0_D7/FB_A23, label: HB_HG8, identifier: HB_HG8}
 - {pin_num: '128', pin_signal: ADC0_SE5b/PTD1/SPI0_SCK/UART2_CTS_b/FB_CS0_b, label: HB_HG1, identifier: HB_HG1}
+- {pin_num: '129', pin_signal: PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FB_AD4, label: HB_LG2, identifier: HB_LG2}
 - {pin_num: '130', pin_signal: PTD3/SPI0_SIN/UART2_TX/FB_AD3, label: HB_HG2, identifier: HB_HG2}
+- {pin_num: '131', pin_signal: PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN, label: HB_LG3, identifier: HB_LG3}
 - {pin_num: '132', pin_signal: ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b, label: HB_HG3, identifier: HB_HG3}
-- {pin_num: '136', pin_signal: PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1, label: HB_HG4, identifier: HB_HG4}
-- {pin_num: '138', pin_signal: PTD9/I2C0_SDA/UART5_TX/FB_A17, label: HB_HG5, identifier: HB_HG5}
-- {pin_num: '140', pin_signal: PTD11/SPI2_PCS0/UART5_CTS_b/SDHC0_CLKIN/FB_A19, label: HB_HG6, identifier: HB_HG6}
-- {pin_num: '142', pin_signal: PTD13/SPI2_SOUT/SDHC0_D5/FB_A21, label: HB_HG7, identifier: HB_HG7}
+- {pin_num: '133', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0, label: HB_LG4, identifier: HB_LG4}
 - {pin_num: '134', pin_signal: VSS150, label: VSS_134, identifier: VSS_134}
 - {pin_num: '135', pin_signal: VDD151, label: VDD_135, identifier: VDD_135}
+- {pin_num: '136', pin_signal: PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1, label: HB_HG4, identifier: HB_HG4}
+- {pin_num: '137', pin_signal: PTD8/I2C0_SCL/UART5_RX/FB_A16, label: HB_LG5, identifier: HB_LG5}
+- {pin_num: '138', pin_signal: PTD9/I2C0_SDA/UART5_TX/FB_A17, label: HB_HG5, identifier: HB_HG5}
+- {pin_num: '139', pin_signal: PTD10/UART5_RTS_b/FB_A18, label: HB_LG6, identifier: HB_LG6}
+- {pin_num: '140', pin_signal: PTD11/SPI2_PCS0/UART5_CTS_b/SDHC0_CLKIN/FB_A19, label: HB_HG6, identifier: HB_HG6}
+- {pin_num: '141', pin_signal: PTD12/SPI2_SCK/SDHC0_D4/FB_A20, label: HB_LG7, identifier: HB_LG7}
+- {pin_num: '142', pin_signal: PTD13/SPI2_SOUT/SDHC0_D5/FB_A21, label: HB_HG7, identifier: HB_HG7}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -188,59 +188,74 @@ BOARD_InitPins:
   - {pin_num: '16', peripheral: SUPPLY, signal: 'VDD, 16', pin_signal: VDD16}
   - {pin_num: '17', peripheral: SUPPLY, signal: 'VSS, 17', pin_signal: VSS17}
   - {pin_num: '18', peripheral: SUPPLY, signal: 'VSS, 22', pin_signal: VSS22}
+  - {pin_num: '19', peripheral: USB0, signal: DP, pin_signal: USB0_DP}
+  - {pin_num: '20', peripheral: USB0, signal: DM, pin_signal: USB0_DM}
+  - {pin_num: '21', peripheral: USB0, signal: VOUT33, pin_signal: VOUT33}
+  - {pin_num: '22', peripheral: USB0, signal: VREGIN, pin_signal: VREGIN}
+  - {pin_num: '27', peripheral: ADC0, signal: 'DP, 0', pin_signal: PGA0_DP/ADC0_DP0/ADC1_DP3}
+  - {pin_num: '28', peripheral: ADC0, signal: 'DM, 0', pin_signal: PGA0_DM/ADC0_DM0/ADC1_DM3}
   - {pin_num: '31', peripheral: SUPPLY, signal: 'VDDA, 0', pin_signal: VDDA}
-  - {pin_num: '34', peripheral: SUPPLY, signal: 'VSSA, 0', pin_signal: VSSA}
-  - {pin_num: '43', peripheral: SUPPLY, signal: 'VDD, 54', pin_signal: VDD54}
-  - {pin_num: '44', peripheral: SUPPLY, signal: 'VSS, 55', pin_signal: VSS55}
-  - {pin_num: '56', peripheral: SUPPLY, signal: 'VDD, 67', pin_signal: VDD67}
-  - {pin_num: '57', peripheral: SUPPLY, signal: 'VSS, 68', pin_signal: VSS68}
-  - {pin_num: '70', peripheral: SUPPLY, signal: 'VDD, 81', pin_signal: VDD81}
-  - {pin_num: '71', peripheral: SUPPLY, signal: 'VSS, 82', pin_signal: VSS82}
-  - {pin_num: '74', peripheral: RCM, signal: RESET, pin_signal: RESET_b}
-  - {pin_num: '93', peripheral: SUPPLY, signal: 'VSS, 104', pin_signal: VSS104}
-  - {pin_num: '94', peripheral: SUPPLY, signal: 'VDD, 105', pin_signal: VDD105}
-  - {pin_num: '107', peripheral: SUPPLY, signal: 'VSS, 118', pin_signal: VSS118}
-  - {pin_num: '108', peripheral: SUPPLY, signal: 'VDD, 119', pin_signal: VDD119}
-  - {pin_num: '121', peripheral: SUPPLY, signal: 'VSS, 137', pin_signal: VSS137}
-  - {pin_num: '122', peripheral: SUPPLY, signal: 'VDD, 138', pin_signal: VDD138}
-  - {pin_num: '134', peripheral: SUPPLY, signal: 'VSS, 150', pin_signal: VSS150}
-  - {pin_num: '135', peripheral: SUPPLY, signal: 'VDD, 151', pin_signal: VDD151}
-  - {pin_num: '72', peripheral: OSC, signal: EXTAL0, pin_signal: EXTAL0/PTA18/FTM0_FLT2/FTM_CLKIN0}
-  - {pin_num: '73', peripheral: OSC, signal: XTAL0, pin_signal: XTAL0/PTA19/FTM1_FLT0/FTM_CLKIN1/LPTMR0_ALT1}
   - {pin_num: '32', peripheral: ADC0, signal: VREFH, pin_signal: VREFH}
   - {pin_num: '33', peripheral: ADC0, signal: VREFL, pin_signal: VREFL}
+  - {pin_num: '34', peripheral: SUPPLY, signal: 'VSSA, 0', pin_signal: VSSA}
+  - {pin_num: '42', peripheral: RTC, signal: VBAT, pin_signal: VBAT}
+  - {pin_num: '43', peripheral: SUPPLY, signal: 'VDD, 54', pin_signal: VDD54}
+  - {pin_num: '44', peripheral: SUPPLY, signal: 'VSS, 55', pin_signal: VSS55}
+  - {pin_num: '45', peripheral: ADC0, signal: 'SE, 17', pin_signal: ADC0_SE17/EXTAL1/PTE24/CAN1_TX/UART4_TX/EWM_OUT_b}
+  - {pin_num: '46', peripheral: ADC0, signal: 'SE, 18', pin_signal: ADC0_SE18/XTAL1/PTE25/CAN1_RX/UART4_RX/EWM_IN}
   - {pin_num: '50', peripheral: JTAG, signal: JTAG_TCLK, pin_signal: TSI0_CH1/PTA0/UART0_CTS_b/UART0_COL_b/FTM0_CH5/JTAG_TCLK/SWD_CLK/EZP_CLK}
   - {pin_num: '51', peripheral: JTAG, signal: JTAG_TDI, pin_signal: TSI0_CH2/PTA1/UART0_RX/FTM0_CH6/JTAG_TDI/EZP_DI}
   - {pin_num: '52', peripheral: JTAG, signal: JTAG_TDO, pin_signal: TSI0_CH3/PTA2/UART0_TX/FTM0_CH7/JTAG_TDO/TRACE_SWO/EZP_DO}
   - {pin_num: '53', peripheral: JTAG, signal: JTAG_TMS, pin_signal: TSI0_CH4/PTA3/UART0_RTS_b/FTM0_CH0/JTAG_TMS/SWD_DIO}
-  - {pin_num: '66', peripheral: UART0, signal: TX, pin_signal: PTA14/SPI0_PCS0/UART0_TX/RMII0_CRS_DV/MII0_RXDV/I2S0_RX_BCLK/I2S0_TXD1}
+  - {pin_num: '56', peripheral: SUPPLY, signal: 'VDD, 67', pin_signal: VDD67}
+  - {pin_num: '57', peripheral: SUPPLY, signal: 'VSS, 68', pin_signal: VSS68}
+  - {pin_num: '65', peripheral: GPIOA, signal: 'GPIO, 13', pin_signal: CMP2_IN1/PTA13/LLWU_P4/CAN0_RX/FTM1_CH1/RMII0_RXD0/MII0_RXD0/I2S0_TX_FS/FTM1_QD_PHB, direction: OUTPUT}
+  - {pin_num: '66', peripheral: UART0, signal: TX, pin_signal: PTA14/SPI0_PCS0/UART0_TX/RMII0_CRS_DV/MII0_RXDV/I2S0_RX_BCLK/I2S0_TXD1, direction: OUTPUT}
   - {pin_num: '67', peripheral: UART0, signal: RX, pin_signal: PTA15/SPI0_SCK/UART0_RX/RMII0_TXEN/MII0_TXEN/I2S0_RXD0}
+  - {pin_num: '70', peripheral: SUPPLY, signal: 'VDD, 81', pin_signal: VDD81}
+  - {pin_num: '71', peripheral: SUPPLY, signal: 'VSS, 82', pin_signal: VSS82}
+  - {pin_num: '72', peripheral: OSC, signal: EXTAL0, pin_signal: EXTAL0/PTA18/FTM0_FLT2/FTM_CLKIN0}
+  - {pin_num: '73', peripheral: OSC, signal: XTAL0, pin_signal: XTAL0/PTA19/FTM1_FLT0/FTM_CLKIN1/LPTMR0_ALT1}
+  - {pin_num: '74', peripheral: RCM, signal: RESET, pin_signal: RESET_b}
+  - {pin_num: '81', peripheral: ADC1, signal: 'SE, 8', pin_signal: ADC0_SE8/ADC1_SE8/TSI0_CH0/PTB0/LLWU_P5/I2C0_SCL/FTM1_CH0/RMII0_MDIO/MII0_MDIO/FTM1_QD_PHA}
+  - {pin_num: '82', peripheral: ADC1, signal: 'SE, 9', pin_signal: ADC0_SE9/ADC1_SE9/TSI0_CH6/PTB1/I2C0_SDA/FTM1_CH1/RMII0_MDC/MII0_MDC/FTM1_QD_PHB}
   - {pin_num: '83', peripheral: I2C0, signal: SCL, pin_signal: ADC0_SE12/TSI0_CH7/PTB2/I2C0_SCL/UART0_RTS_b/ENET0_1588_TMR0/FTM0_FLT3}
   - {pin_num: '84', peripheral: I2C0, signal: SDA, pin_signal: ADC0_SE13/TSI0_CH8/PTB3/I2C0_SDA/UART0_CTS_b/UART0_COL_b/ENET0_1588_TMR1/FTM0_FLT0}
-  - {pin_num: '12', peripheral: GPIOE, signal: 'GPIO, 9', pin_signal: PTE9/I2S0_TXD1/UART5_RX/I2S0_RX_BCLK, direction: INPUT}
-  - {pin_num: '45', peripheral: ADC0, signal: 'SE, 17', pin_signal: ADC0_SE17/EXTAL1/PTE24/CAN1_TX/UART4_TX/EWM_OUT_b}
-  - {pin_num: '114', peripheral: GPIOC, signal: 'GPIO, 9', pin_signal: ADC1_SE5b/CMP0_IN3/PTC9/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0, direction: OUTPUT}
+  - {pin_num: '85', peripheral: ADC1, signal: 'SE, 10', pin_signal: ADC1_SE10/PTB4/ENET0_1588_TMR2/FTM1_FLT0}
+  - {pin_num: '86', peripheral: ADC1, signal: 'SE, 11', pin_signal: ADC1_SE11/PTB5/ENET0_1588_TMR3/FTM2_FLT0}
+  - {pin_num: '87', peripheral: ADC1, signal: 'SE, 12', pin_signal: ADC1_SE12/PTB6/FB_AD23}
+  - {pin_num: '88', peripheral: ADC1, signal: 'SE, 13', pin_signal: ADC1_SE13/PTB7/FB_AD22}
+  - {pin_num: '91', peripheral: ADC1, signal: 'SE, 14', pin_signal: ADC1_SE14/PTB10/SPI1_PCS0/UART3_RX/FB_AD19/FTM0_FLT1}
+  - {pin_num: '92', peripheral: ADC1, signal: 'SE, 15', pin_signal: ADC1_SE15/PTB11/SPI1_SCK/UART3_TX/FB_AD18/FTM0_FLT2}
+  - {pin_num: '93', peripheral: SUPPLY, signal: 'VSS, 104', pin_signal: VSS104}
+  - {pin_num: '94', peripheral: SUPPLY, signal: 'VDD, 105', pin_signal: VDD105}
+  - {pin_num: '106', peripheral: SIM, signal: CLKOUT, pin_signal: CMP1_IN1/PTC3/LLWU_P7/SPI0_PCS1/UART1_RX/FTM0_CH2/CLKOUT/I2S0_TX_BCLK}
+  - {pin_num: '107', peripheral: SUPPLY, signal: 'VSS, 118', pin_signal: VSS118}
+  - {pin_num: '108', peripheral: SUPPLY, signal: 'VDD, 119', pin_signal: VDD119}
+  - {pin_num: '114', peripheral: GPIOC, signal: 'GPIO, 9', pin_signal: ADC1_SE5b/CMP0_IN3/PTC9/I2S0_RX_BCLK/FB_AD6/FTM2_FLT0, direction: INPUT}
   - {pin_num: '115', peripheral: I2C1, signal: SCL, pin_signal: ADC1_SE6b/PTC10/I2C1_SCL/I2S0_RX_FS/FB_AD5}
   - {pin_num: '116', peripheral: I2C1, signal: SDA, pin_signal: ADC1_SE7b/PTC11/LLWU_P11/I2C1_SDA/I2S0_RXD1/FB_RW_b}
-  - {pin_num: '113', peripheral: GPIOC, signal: 'GPIO, 8', pin_signal: ADC1_SE4b/CMP0_IN2/PTC8/I2S0_MCLK/FB_AD7, direction: OUTPUT}
-  - {pin_num: '42', peripheral: RTC, signal: VBAT, pin_signal: VBAT}
-  - {pin_num: '127', peripheral: GPIOD, signal: 'GPIO, 0', pin_signal: PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FB_ALE/FB_CS1_b/FB_TS_b, direction: OUTPUT, gpio_init_state: 'true'}
+  - {pin_num: '117', peripheral: GPIOC, signal: 'GPIO, 12', pin_signal: PTC12/UART4_RTS_b/FB_AD27, direction: OUTPUT}
+  - {pin_num: '121', peripheral: SUPPLY, signal: 'VSS, 137', pin_signal: VSS137}
+  - {pin_num: '122', peripheral: SUPPLY, signal: 'VDD, 138', pin_signal: VDD138}
+  - {pin_num: '127', peripheral: GPIOD, signal: 'GPIO, 0', pin_signal: PTD0/LLWU_P12/SPI0_PCS0/UART2_RTS_b/FB_ALE/FB_CS1_b/FB_TS_b, direction: OUTPUT}
   - {pin_num: '128', peripheral: GPIOD, signal: 'GPIO, 1', pin_signal: ADC0_SE5b/PTD1/SPI0_SCK/UART2_CTS_b/FB_CS0_b, direction: OUTPUT}
-  - {pin_num: '129', peripheral: GPIOD, signal: 'GPIO, 2', pin_signal: PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FB_AD4, direction: OUTPUT, gpio_init_state: 'true'}
+  - {pin_num: '129', peripheral: GPIOD, signal: 'GPIO, 2', pin_signal: PTD2/LLWU_P13/SPI0_SOUT/UART2_RX/FB_AD4, direction: OUTPUT}
+  - {pin_num: '130', peripheral: GPIOD, signal: 'GPIO, 3', pin_signal: PTD3/SPI0_SIN/UART2_TX/FB_AD3, direction: OUTPUT}
   - {pin_num: '131', peripheral: GPIOD, signal: 'GPIO, 4', pin_signal: PTD4/LLWU_P14/SPI0_PCS1/UART0_RTS_b/FTM0_CH4/FB_AD2/EWM_IN, direction: OUTPUT}
-  - {pin_num: '130', peripheral: GPIOD, signal: 'GPIO, 3', pin_signal: PTD3/SPI0_SIN/UART2_TX/FB_AD3, direction: OUTPUT, gpio_init_state: 'true'}
   - {pin_num: '132', peripheral: GPIOD, signal: 'GPIO, 5', pin_signal: ADC0_SE6b/PTD5/SPI0_PCS2/UART0_CTS_b/UART0_COL_b/FTM0_CH5/FB_AD1/EWM_OUT_b, direction: OUTPUT}
-  - {pin_num: '133', peripheral: GPIOD, signal: 'GPIO, 6', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0, direction: OUTPUT, gpio_init_state: 'true'}
+  - {pin_num: '133', peripheral: GPIOD, signal: 'GPIO, 6', pin_signal: ADC0_SE7b/PTD6/LLWU_P15/SPI0_PCS3/UART0_RX/FTM0_CH6/FB_AD0/FTM0_FLT0, direction: OUTPUT}
+  - {pin_num: '134', peripheral: SUPPLY, signal: 'VSS, 150', pin_signal: VSS150}
+  - {pin_num: '135', peripheral: SUPPLY, signal: 'VDD, 151', pin_signal: VDD151}
   - {pin_num: '136', peripheral: GPIOD, signal: 'GPIO, 7', pin_signal: PTD7/CMT_IRO/UART0_TX/FTM0_CH7/FTM0_FLT1, direction: OUTPUT}
-  - {pin_num: '137', peripheral: GPIOD, signal: 'GPIO, 8', pin_signal: PTD8/I2C0_SCL/UART5_RX/FB_A16, direction: OUTPUT, gpio_init_state: 'true'}
+  - {pin_num: '137', peripheral: GPIOD, signal: 'GPIO, 8', pin_signal: PTD8/I2C0_SCL/UART5_RX/FB_A16, direction: OUTPUT}
   - {pin_num: '138', peripheral: GPIOD, signal: 'GPIO, 9', pin_signal: PTD9/I2C0_SDA/UART5_TX/FB_A17, direction: OUTPUT}
-  - {pin_num: '139', peripheral: GPIOD, signal: 'GPIO, 10', pin_signal: PTD10/UART5_RTS_b/FB_A18, direction: OUTPUT, gpio_init_state: 'true'}
+  - {pin_num: '139', peripheral: GPIOD, signal: 'GPIO, 10', pin_signal: PTD10/UART5_RTS_b/FB_A18, direction: OUTPUT}
   - {pin_num: '140', peripheral: GPIOD, signal: 'GPIO, 11', pin_signal: PTD11/SPI2_PCS0/UART5_CTS_b/SDHC0_CLKIN/FB_A19, direction: OUTPUT}
-  - {pin_num: '141', peripheral: GPIOD, signal: 'GPIO, 12', pin_signal: PTD12/SPI2_SCK/SDHC0_D4/FB_A20, direction: OUTPUT, gpio_init_state: 'true'}
+  - {pin_num: '141', peripheral: GPIOD, signal: 'GPIO, 12', pin_signal: PTD12/SPI2_SCK/SDHC0_D4/FB_A20, direction: OUTPUT}
   - {pin_num: '142', peripheral: GPIOD, signal: 'GPIO, 13', pin_signal: PTD13/SPI2_SOUT/SDHC0_D5/FB_A21, direction: OUTPUT}
-  - {pin_num: '143', peripheral: GPIOD, signal: 'GPIO, 14', pin_signal: PTD14/SPI2_SIN/SDHC0_D6/FB_A22, direction: OUTPUT, gpio_init_state: 'true'}
+  - {pin_num: '143', peripheral: GPIOD, signal: 'GPIO, 14', pin_signal: PTD14/SPI2_SIN/SDHC0_D6/FB_A22, direction: OUTPUT}
   - {pin_num: '144', peripheral: GPIOD, signal: 'GPIO, 15', pin_signal: PTD15/SPI2_PCS1/SDHC0_D7/FB_A23, direction: OUTPUT}
-  - {pin_num: '46', peripheral: ADC0, signal: 'SE, 18', pin_signal: ADC0_SE18/XTAL1/PTE25/CAN1_RX/UART4_RX/EWM_IN}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -248,7 +263,7 @@ BOARD_InitPins:
 /* FUNCTION ************************************************************************************************************
  *
  * Function Name : BOARD_InitPins
- * Description   : 
+ * Description   : Configures pin routing and optionally pin electrical features.
  *
  * END ****************************************************************************************************************/
 void BOARD_InitPins(void)
@@ -268,19 +283,26 @@ void BOARD_InitPins(void)
         .pinDirection = kGPIO_DigitalOutput,
         .outputLogic = 0U
     };
-    /* Initialize GPIO functionality on pin PTC8 (pin 113)  */
+    /* Initialize GPIO functionality on pin PTA13 (pin 65)  */
     GPIO_PinInit(PS_HV_EN_GPIO, PS_HV_EN_PIN, &PS_HV_EN_config);
+
+    gpio_pin_config_t PS_SW_STATE_config = {
+        .pinDirection = kGPIO_DigitalInput,
+        .outputLogic = 0U
+    };
+    /* Initialize GPIO functionality on pin PTC9 (pin 114)  */
+    GPIO_PinInit(PS_SW_STATE_GPIO, PS_SW_STATE_PIN, &PS_SW_STATE_config);
 
     gpio_pin_config_t PS_12V_EN_config = {
         .pinDirection = kGPIO_DigitalOutput,
         .outputLogic = 0U
     };
-    /* Initialize GPIO functionality on pin PTC9 (pin 114)  */
+    /* Initialize GPIO functionality on pin PTC12 (pin 117)  */
     GPIO_PinInit(PS_12V_EN_GPIO, PS_12V_EN_PIN, &PS_12V_EN_config);
 
     gpio_pin_config_t HB_LG1_config = {
         .pinDirection = kGPIO_DigitalOutput,
-        .outputLogic = 1U
+        .outputLogic = 0U
     };
     /* Initialize GPIO functionality on pin PTD0 (pin 127)  */
     GPIO_PinInit(HB_LG1_GPIO, HB_LG1_PIN, &HB_LG1_config);
@@ -294,14 +316,14 @@ void BOARD_InitPins(void)
 
     gpio_pin_config_t HB_LG2_config = {
         .pinDirection = kGPIO_DigitalOutput,
-        .outputLogic = 1U
+        .outputLogic = 0U
     };
     /* Initialize GPIO functionality on pin PTD2 (pin 129)  */
     GPIO_PinInit(HB_LG2_GPIO, HB_LG2_PIN, &HB_LG2_config);
 
     gpio_pin_config_t HB_HG2_config = {
         .pinDirection = kGPIO_DigitalOutput,
-        .outputLogic = 1U
+        .outputLogic = 0U
     };
     /* Initialize GPIO functionality on pin PTD3 (pin 130)  */
     GPIO_PinInit(HB_HG2_GPIO, HB_HG2_PIN, &HB_HG2_config);
@@ -322,7 +344,7 @@ void BOARD_InitPins(void)
 
     gpio_pin_config_t HB_LG4_config = {
         .pinDirection = kGPIO_DigitalOutput,
-        .outputLogic = 1U
+        .outputLogic = 0U
     };
     /* Initialize GPIO functionality on pin PTD6 (pin 133)  */
     GPIO_PinInit(HB_LG4_GPIO, HB_LG4_PIN, &HB_LG4_config);
@@ -336,7 +358,7 @@ void BOARD_InitPins(void)
 
     gpio_pin_config_t HB_LG5_config = {
         .pinDirection = kGPIO_DigitalOutput,
-        .outputLogic = 1U
+        .outputLogic = 0U
     };
     /* Initialize GPIO functionality on pin PTD8 (pin 137)  */
     GPIO_PinInit(HB_LG5_GPIO, HB_LG5_PIN, &HB_LG5_config);
@@ -350,7 +372,7 @@ void BOARD_InitPins(void)
 
     gpio_pin_config_t HB_LG6_config = {
         .pinDirection = kGPIO_DigitalOutput,
-        .outputLogic = 1U
+        .outputLogic = 0U
     };
     /* Initialize GPIO functionality on pin PTD10 (pin 139)  */
     GPIO_PinInit(HB_LG6_GPIO, HB_LG6_PIN, &HB_LG6_config);
@@ -364,7 +386,7 @@ void BOARD_InitPins(void)
 
     gpio_pin_config_t HB_LG7_config = {
         .pinDirection = kGPIO_DigitalOutput,
-        .outputLogic = 1U
+        .outputLogic = 0U
     };
     /* Initialize GPIO functionality on pin PTD12 (pin 141)  */
     GPIO_PinInit(HB_LG7_GPIO, HB_LG7_PIN, &HB_LG7_config);
@@ -378,7 +400,7 @@ void BOARD_InitPins(void)
 
     gpio_pin_config_t HB_LG8_config = {
         .pinDirection = kGPIO_DigitalOutput,
-        .outputLogic = 1U
+        .outputLogic = 0U
     };
     /* Initialize GPIO functionality on pin PTD14 (pin 143)  */
     GPIO_PinInit(HB_LG8_GPIO, HB_LG8_PIN, &HB_LG8_config);
@@ -390,18 +412,14 @@ void BOARD_InitPins(void)
     /* Initialize GPIO functionality on pin PTD15 (pin 144)  */
     GPIO_PinInit(HB_HG8_GPIO, HB_HG8_PIN, &HB_HG8_config);
 
-    gpio_pin_config_t PS_SW_STATE_config = {
-        .pinDirection = kGPIO_DigitalInput,
-        .outputLogic = 0U
-    };
-    /* Initialize GPIO functionality on pin PTE9 (pin 12)  */
-    GPIO_PinInit(PS_SW_STATE_GPIO, PS_SW_STATE_PIN, &PS_SW_STATE_config);
-
     /* PORTA0 (pin 50) is configured as JTAG_TCLK */
-    PORT_SetPinMux(JTAG_CLK_PORT, JTAG_CLK_PIN, kPORT_MuxAlt7);
+    PORT_SetPinMux(JTAG_TCLK_PORT, JTAG_TCLK_PIN, kPORT_MuxAlt7);
 
     /* PORTA1 (pin 51) is configured as JTAG_TDI */
     PORT_SetPinMux(JTAG_TDI_PORT, JTAG_TDI_PIN, kPORT_MuxAlt7);
+
+    /* PORTA13 (pin 65) is configured as PTA13 */
+    PORT_SetPinMux(PS_HV_EN_PORT, PS_HV_EN_PIN, kPORT_MuxAsGpio);
 
     /* PORTA14 (pin 66) is configured as UART0_TX */
     PORT_SetPinMux(USB_UART_TX_PORT, USB_UART_TX_PIN, kPORT_MuxAlt3);
@@ -421,11 +439,35 @@ void BOARD_InitPins(void)
     /* PORTA3 (pin 53) is configured as JTAG_TMS */
     PORT_SetPinMux(JTAG_TMS_PORT, JTAG_TMS_PIN, kPORT_MuxAlt7);
 
+    /* PORTB0 (pin 81) is configured as ADC1_SE8 */
+    PORT_SetPinMux(HB_CM_CH1_PORT, HB_CM_CH1_PIN, kPORT_PinDisabledOrAnalog);
+
+    /* PORTB1 (pin 82) is configured as ADC1_SE9 */
+    PORT_SetPinMux(HB_CM_CH2_PORT, HB_CM_CH2_PIN, kPORT_PinDisabledOrAnalog);
+
+    /* PORTB10 (pin 91) is configured as ADC1_SE14 */
+    PORT_SetPinMux(HB_CM_CH7_PORT, HB_CM_CH7_PIN, kPORT_PinDisabledOrAnalog);
+
+    /* PORTB11 (pin 92) is configured as ADC1_SE15 */
+    PORT_SetPinMux(HB_CM_CH8_PORT, HB_CM_CH8_PIN, kPORT_PinDisabledOrAnalog);
+
     /* PORTB2 (pin 83) is configured as I2C0_SCL */
     PORT_SetPinMux(EEPROM_SCL_PORT, EEPROM_SCL_PIN, kPORT_MuxAlt2);
 
     /* PORTB3 (pin 84) is configured as I2C0_SDA */
     PORT_SetPinMux(EEPROM_SDA_PORT, EEPROM_SDA_PIN, kPORT_MuxAlt2);
+
+    /* PORTB4 (pin 85) is configured as ADC1_SE10 */
+    PORT_SetPinMux(HB_CM_CH3_PORT, HB_CM_CH3_PIN, kPORT_PinDisabledOrAnalog);
+
+    /* PORTB5 (pin 86) is configured as ADC1_SE11 */
+    PORT_SetPinMux(HB_CM_CH4_PORT, HB_CM_CH4_PIN, kPORT_PinDisabledOrAnalog);
+
+    /* PORTB6 (pin 87) is configured as ADC1_SE12 */
+    PORT_SetPinMux(HB_CM_CH5_PORT, HB_CM_CH5_PIN, kPORT_PinDisabledOrAnalog);
+
+    /* PORTB7 (pin 88) is configured as ADC1_SE13 */
+    PORT_SetPinMux(HB_CM_CH6_PORT, HB_CM_CH6_PIN, kPORT_PinDisabledOrAnalog);
 
     /* PORTC10 (pin 115) is configured as I2C1_SCL */
     PORT_SetPinMux(PS_12V_SCL_PORT, PS_12V_SCL_PIN, kPORT_MuxAlt2);
@@ -433,11 +475,14 @@ void BOARD_InitPins(void)
     /* PORTC11 (pin 116) is configured as I2C1_SDA */
     PORT_SetPinMux(PS_12V_SDA_PORT, PS_12V_SDA_PIN, kPORT_MuxAlt2);
 
-    /* PORTC8 (pin 113) is configured as PTC8 */
-    PORT_SetPinMux(PS_HV_EN_PORT, PS_HV_EN_PIN, kPORT_MuxAsGpio);
+    /* PORTC12 (pin 117) is configured as PTC12 */
+    PORT_SetPinMux(PS_12V_EN_PORT, PS_12V_EN_PIN, kPORT_MuxAsGpio);
+
+    /* PORTC3 (pin 106) is configured as CLKOUT */
+    PORT_SetPinMux(SIM_CLKOUT_PORT, SIM_CLKOUT_PIN, kPORT_MuxAlt5);
 
     /* PORTC9 (pin 114) is configured as PTC9 */
-    PORT_SetPinMux(PS_12V_EN_PORT, PS_12V_EN_PIN, kPORT_MuxAsGpio);
+    PORT_SetPinMux(PS_SW_STATE_PORT, PS_SW_STATE_PIN, kPORT_MuxAsGpio);
 
     /* PORTD0 (pin 127) is configured as PTD0 */
     PORT_SetPinMux(HB_LG1_PORT, HB_LG1_PIN, kPORT_MuxAsGpio);
@@ -492,9 +537,6 @@ void BOARD_InitPins(void)
 
     /* PORTE25 (pin 46) is configured as ADC0_SE18 */
     PORT_SetPinMux(PS_HV_VM_PORT, PS_HV_VM_PIN, kPORT_PinDisabledOrAnalog);
-
-    /* PORTE9 (pin 12) is configured as PTE9 */
-    PORT_SetPinMux(PS_SW_STATE_PORT, PS_SW_STATE_PIN, kPORT_MuxAsGpio);
 
     SIM->SOPT5 = ((SIM->SOPT5 &
                    /* Mask bits to zero which are setting */

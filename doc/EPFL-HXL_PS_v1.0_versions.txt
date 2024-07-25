@@ -1,10 +1,10 @@
 /*
- * @project EPFL-HXL_PS_v1.1
- * @file    EPFL-HXL_PS_v1.1.txt
+ * @project EPFL-HXL_PS_v1.0
+ * @file    EPFL-HXL_PS_v1.0_version.txt
  * @brief   Author:             MBE
  *          Institute:          EPFL
  *          Laboratory:         LMTS
- *          Firmware version:   v1.11
+ *          Firmware version:   v1.09
  *          Created on:         12.02.2024
  *          Last modifications: 22.03.2024
  *
@@ -25,6 +25,14 @@
  */
 
 
-Software Version:
-v1.10 - 29.01.2024: integration of the controls for Half-Bridges/Full-Bridges
-v1.11 - 12.02.2024: integration of last features from v1.0 version
+Firmware Version:
+v1.00 - 25.06.2022: first stable version
+v1.01 - 24.08.2022: first stable version with all the functionnalities
+v1.02 - 13.04.2023: second stable version with all the functionnalities + possibility to use all the full-bridges with one command.
+v1.03 - 27.04.2023: third stable version with PID for HV
+v1.04 - 04.05.2023: add a mode (mode 3) to control 3 phases
+v1.05 - 05.06.2023: correction frequency errors + add possibilty to choose dephase value for mode 3 
+v1.06 - 23.06.2023: correction frequency errors + add possibilty to choose a frequency lower than 1 Hz
+v1.07 - 27.09.2023: tComm and tHB modifications for simpler, higher performance (test_values and test_channel functions...)
+v1.08 - 05.02.2024: tHB mods + a single command for all modes
+v1.09 - 12.02.2024: EEPROM mods, add unlocking and expert mode + clean version 

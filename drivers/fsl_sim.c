@@ -1,6 +1,6 @@
 /*
- * Copyright 2016-2022 NXP
- * All rights reserved.
+ * Copyright (c) 2015, Freescale Semiconductor, Inc.
+ * Copyright 2016-2017 NXP
  *
  * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
@@ -12,7 +12,7 @@
  *   list of conditions and the following disclaimer in the documentation and/or
  *   other materials provided with the distribution.
  *
- * o Neither the name of NXP Semiconductor, Inc. nor the names of its
+ * o Neither the name of the copyright holder nor the names of its
  *   contributors may be used to endorse or promote products derived from this
  *   software without specific prior written permission.
  *
@@ -28,40 +28,26 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-/**
- * @file    board.h
- * @brief   Board initialization header file.
- */
- 
-/* This is a template for board specific configuration created by MCUXpresso IDE Project Wizard.*/
+#include "fsl_sim.h"
 
-#ifndef _BOARD_H_
-#define _BOARD_H_
+/*******************************************************************************
+ * Codes
+ ******************************************************************************/
+#if (defined(FSL_FEATURE_SIM_OPT_HAS_USB_VOLTAGE_REGULATOR) && FSL_FEATURE_SIM_OPT_HAS_USB_VOLTAGE_REGULATOR)
+void SIM_SetUsbVoltRegulatorEnableMode(uint32_t mask)
+{
+    SIM->SOPT1CFG |= (SIM_SOPT1CFG_URWE_MASK | SIM_SOPT1CFG_UVSWE_MASK | SIM_SOPT1CFG_USSWE_MASK);
 
-/**
- * @brief	The board name 
- */
-#define BOARD_NAME "NOT DEFINED"
-#define FW_VERSION "v1.09 - 12.02.2024"
-
-/**
- * @brief	The flash size
- */
-#define BOARD_FLASH_SIZE (0x0U)
-
-#if defined(__cplusplus)
-extern "C" {
-#endif /* __cplusplus */
-
-/**
- * @brief 	Initialize board specific settings.
- */
-void BOARD_InitDebugConsole(void);
-
-#if defined(__cplusplus)
+    SIM->SOPT1 = (SIM->SOPT1 & ~kSIM_UsbVoltRegEnableInAllModes) | mask;
 }
-#endif /* __cplusplus */
+#endif /* FSL_FEATURE_SIM_OPT_HAS_USB_VOLTAGE_REGULATOR */
 
-#endif /* _BOARD_H_ */
-
-
+void SIM_GetUniqueId(sim_uid_t *uid)
+{
+#if defined(SIM_UIDH)
+    uid->H = SIM->UIDH;
+#endif
+    uid->MH = SIM->UIDMH;
+    uid->ML = SIM->UIDML;
+    uid->L = SIM->UIDL;
+}

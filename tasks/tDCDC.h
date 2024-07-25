@@ -1,10 +1,10 @@
 /*
- * @project EPFL-HXL_PS_v1.1
+ * @project EPFL-HXL_PS_v1.0
  * @file    tDCDC.h
  * @brief   Author:             MBE
  *          Institute:          EPFL
  *          Laboratory:         LMTS
- *          Firmware version:   v1.11
+ *          Firmware version:   v1.09
  *          Created on:         12.02.2024
  *          Last modifications: 22.03.2024
  *
@@ -115,8 +115,8 @@ private:
 	// monitoring
 	//------------------------------------------------------
 	// high voltage voltage divider
-	static constexpr float hv_2kV_conv = (2501 * 3.3 / 4095.0);
-																		 
+	static constexpr float hv_2kV_conv = (100.0732 / 0.0732) * (3.3 / 4095.0);
+	static constexpr float hv_6kV_conv = (100.033 / 0.033) * (3.3 / 4095.0);
 	// low voltage voltage divider
 	static constexpr float lv_12v_conv = (4.01 * 3.3 / 4095.0);
 

@@ -1,10 +1,10 @@
 /*
- * @project EPFL-HXL_PS_v1.1
+ * @project EPFL-HXL_PS_v1.0
  * @file    mEEPROM.cpp
  * @brief   Author:             MBE
  *          Institute:          EPFL
  *          Laboratory:         LMTS
- *          Firmware version:   v1.11
+ *          Firmware version:   v1.09
  *          Created on:         12.02.2024
  *          Last modifications: 22.03.2024
  *
@@ -76,8 +76,6 @@ void mEEPROM::conf(const char *name, float hv_max) {
 		hv_min = 350;
 	} else if (hv_max == 3000){
 		hv_min = 550;
-	} else if (hv_max == 4500){
-		hv_min = 950;
 	}
 	write_float(eeprom.ADDR_MIN_HV, hv_min);     // V
 	// Half-Bridges Frequency
@@ -111,7 +109,7 @@ void mEEPROM::conf(const char *name, float hv_max) {
 	write_uint8(eeprom.ADDR_CONF, (bool) true);
 	write_uint8(eeprom.ADDR_ADMIN, (bool) false);
 	write_uint8(eeprom.ADDR_LOCK, (bool) true);
-	write_float(eeprom.ADDR_HW_VER, 1.1);
+	write_float(eeprom.ADDR_HW_VER, (float) 1.0);
 }
 
 void mEEPROM::init() {

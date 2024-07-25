@@ -33,11 +33,11 @@
 /* clang-format off */
 /* TEXT BELOW IS USED AS SETTING FOR TOOLS *************************************
 !!GlobalInfo
-product: Clocks v11.0
+product: Clocks v9.0
 processor: MK60DN256xxx10
 package_id: MK60DN256VLQ10
 mcu_data: ksdk2_0
-processor_version: 13.0.1
+processor_version: 11.0.1
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS **********/
 /* clang-format on */
 
@@ -56,6 +56,8 @@ processor_version: 13.0.1
 /*******************************************************************************
  * Variables
  ******************************************************************************/
+/* System clock frequency. */
+extern uint32_t SystemCoreClock;
 
 /*******************************************************************************
  * Code
@@ -100,6 +102,7 @@ outputs:
 settings:
 - {id: MCGMode, value: PEE}
 - {id: CLKOUTConfig, value: 'yes'}
+- {id: MCG.FLL_mul.scale, value: '2929', locked: true}
 - {id: MCG.FRDIV.scale, value: '32', locked: true}
 - {id: MCG.IREFS.sel, value: MCG.FRDIV}
 - {id: MCG.PLLS.sel, value: MCG.PLL}
@@ -110,7 +113,8 @@ settings:
 - {id: MCG_C2_RANGE0_FRDIV_CFG, value: Very_high}
 - {id: OSC_CR_SYS_OSC_CAP_LOAD_CFG, value: SC22PF}
 - {id: SIM.CLKOUTSEL.sel, value: SIM.OUTDIV4}
-- {id: SIM.OUTDIV2.scale, value: '2'}
+- {id: SIM.OUTDIV1.scale, value: '1', locked: true}
+- {id: SIM.OUTDIV2.scale, value: '2', locked: true}
 - {id: SIM.OUTDIV3.scale, value: '2'}
 - {id: SIM.OUTDIV4.scale, value: '4'}
 sources:
@@ -128,8 +132,8 @@ const mcg_config_t mcgConfig_BOARD_BootClockRUN =
         .ircs = kMCG_IrcSlow,                     /* Slow internal reference clock selected */
         .fcrdiv = 0x1U,                           /* Fast IRC divider: divided by 2 */
         .frdiv = 0x0U,                            /* FLL reference clock divider: divided by 32 */
-        .drs = kMCG_DrsLow,                       /* Low frequency range */
-        .dmx32 = kMCG_Dmx32Default,               /* DCO has a default range of 25% */
+        .drs = kMCG_DrsHigh,                      /* High frequency range */
+        .dmx32 = kMCG_Dmx32Fine,                  /* DCO is fine-tuned for maximum frequency with 32.768 kHz reference */
         .oscsel = kMCG_OscselOsc,                 /* Selects System Oscillator (OSCCLK) */
         .pll0Config =
             {

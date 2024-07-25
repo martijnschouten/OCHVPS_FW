@@ -1,10 +1,10 @@
 /*
- * @project EPFL-HXL_PS_v1.1
+ * @project EPFL-HXL_PS_v1.0
  * @file    tDCDC.cpp
  * @brief   Author:             MBE
  *          Institute:          EPFL
  *          Laboratory:         LMTS
- *          Firmware version:   v1.11
+ *          Firmware version:   v1.09
  *          Created on:         12.02.2024
  *          Last modifications: 22.03.2024
  *
@@ -150,13 +150,11 @@ double tDCDC::get_ps_hv_cm_corrected() {
 
 /* get high voltage monitor (DCDC) (not corrected)*/
 float tDCDC::get_ps_hv_vm() {
-											
-														   
-							 
-	v_mes[1] = hv_2kV_conv * ((float) mADC::adc0_se_run(18));
-  
-														   
-  
+	if ((MAX_HV == 2000) or (MAX_HV == 3000)) {
+		v_mes[1] = hv_2kV_conv * ((float) mADC::adc0_se_run(18));
+	} else if (MAX_HV == 4500) {
+		v_mes[1] = hv_6kV_conv * ((float) mADC::adc0_se_run(18));
+	}
 	return v_mes[1];
 }
 

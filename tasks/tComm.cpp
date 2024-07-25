@@ -1,10 +1,10 @@
 /*
- * @project EPFL-HXL_PS_v1.1
+ * @project EPFL-HXL_PS_v1.0
  * @file    tComm.cpp
  * @brief   Author:             MBE
  *          Institute:          EPFL
  *          Laboratory:         LMTS
- *          Firmware version:   v1.11
+ *          Firmware version:   v1.09
  *          Created on:         12.02.2024
  *          Last modifications: 22.03.2024
  *
@@ -208,7 +208,7 @@ void tComm::Conf() {
 		char *buffptr;
 		buffptr = sCmd.next();
 		float hv_max = sCmd.parseFloatArg();
-		if (hv_max <= 4500){
+		if (hv_max <= 3000){
 			eeprom.conf(buffptr, hv_max);
 			// PCB
 			PCB.conf = true;

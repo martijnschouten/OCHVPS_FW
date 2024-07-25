@@ -48,91 +48,33 @@ void BOARD_InitBootPins(void);
   @{ */
 /* @} */
 
+/*! @name USB0_DP (number 19), USB_P
+  @{ */
+/* @} */
+
+/*! @name USB0_DM (number 20), USB_N
+  @{ */
+/* @} */
+
+/*! @name VOUT33 (number 21), VOUT33
+  @{ */
+/* @} */
+
+/*! @name VREGIN (number 22), USB_VBUS
+  @{ */
+/* @} */
+
+/*! @name ADC0_DP0 (number 27), PS_HV_CM_P
+  @{ */
+/* @} */
+
+/*! @name ADC0_DM0 (number 28), PS_HV_CM_N
+  @{ */
+/* @} */
+
 /*! @name VDDA (number 31), VDDA_031
   @{ */
 /* @} */
-
-/*! @name VSSA (number 34), VSSA_034
-  @{ */
-/* @} */
-
-/*! @name VDD54 (number 43), VDD_043
-  @{ */
-/* @} */
-
-/*! @name VSS55 (number 44), VSS_044
-  @{ */
-/* @} */
-
-/*! @name VDD67 (number 56), VDD_056
-  @{ */
-/* @} */
-
-/*! @name VSS68 (number 57), VSS_057
-  @{ */
-/* @} */
-
-/*! @name VDD81 (number 70), VDD_070
-  @{ */
-/* @} */
-
-/*! @name VSS82 (number 71), VSS_071
-  @{ */
-/* @} */
-
-/*! @name RESET_b (number 74), RESET_b
-  @{ */
-/* @} */
-
-/*! @name VSS104 (number 93), VSS_093
-  @{ */
-/* @} */
-
-/*! @name VDD105 (number 94), VDD_094
-  @{ */
-/* @} */
-
-/*! @name VSS118 (number 107), VSS_107
-  @{ */
-/* @} */
-
-/*! @name VDD119 (number 108), VDD_108
-  @{ */
-/* @} */
-
-/*! @name VSS137 (number 121), VSS_121
-  @{ */
-/* @} */
-
-/*! @name VDD138 (number 122), VDD_122
-  @{ */
-/* @} */
-
-/*! @name VSS150 (number 134), VSS_134
-  @{ */
-/* @} */
-
-/*! @name VDD151 (number 135), VDD_135
-  @{ */
-/* @} */
-
-/*! @name PORTA18 (number 72), EXTAL0
-  @{ */
-
-/* Symbols to be used with PORT driver */
-#define EXTAL0_PORT PORTA                /*!<@brief PORT peripheral base pointer */
-#define EXTAL0_PIN 18U                   /*!<@brief PORT pin number */
-#define EXTAL0_PIN_MASK (1U << 18U)      /*!<@brief PORT pin mask */
-                                         /* @} */
-
-/*! @name PORTA19 (number 73), XTAL0
-  @{ */
-
-/* Symbols to be used with PORT driver */
-#define XTAL0_PORT PORTA                /*!<@brief PORT peripheral base pointer */
-#define XTAL0_PIN 19U                   /*!<@brief PORT pin number */
-#define XTAL0_PIN_MASK (1U << 19U)      /*!<@brief PORT pin mask */
-                                        /* @} */
 
 /*! @name VREFH (number 32), VREFH_032
   @{ */
@@ -142,14 +84,48 @@ void BOARD_InitBootPins(void);
   @{ */
 /* @} */
 
-/*! @name PORTA0 (number 50), JTAG_CLK
+/*! @name VSSA (number 34), VSSA_034
+  @{ */
+/* @} */
+
+/*! @name VBAT (number 42), VBAT_42
+  @{ */
+/* @} */
+
+/*! @name VDD54 (number 43), VDD54_043
+  @{ */
+/* @} */
+
+/*! @name VSS55 (number 44), VSS55_044
+  @{ */
+/* @} */
+
+/*! @name PORTE24 (number 45), PS_12V_VM
   @{ */
 
 /* Symbols to be used with PORT driver */
-#define JTAG_CLK_PORT PORTA               /*!<@brief PORT peripheral base pointer */
-#define JTAG_CLK_PIN 0U                   /*!<@brief PORT pin number */
-#define JTAG_CLK_PIN_MASK (1U << 0U)      /*!<@brief PORT pin mask */
-                                          /* @} */
+#define PS_12V_VM_PORT PORTE                /*!<@brief PORT peripheral base pointer */
+#define PS_12V_VM_PIN 24U                   /*!<@brief PORT pin number */
+#define PS_12V_VM_PIN_MASK (1U << 24U)      /*!<@brief PORT pin mask */
+                                            /* @} */
+
+/*! @name PORTE25 (number 46), PS_HV_VM
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define PS_HV_VM_PORT PORTE                /*!<@brief PORT peripheral base pointer */
+#define PS_HV_VM_PIN 25U                   /*!<@brief PORT pin number */
+#define PS_HV_VM_PIN_MASK (1U << 25U)      /*!<@brief PORT pin mask */
+                                           /* @} */
+
+/*! @name PORTA0 (number 50), JTAG_TCLK
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define JTAG_TCLK_PORT PORTA               /*!<@brief PORT peripheral base pointer */
+#define JTAG_TCLK_PIN 0U                   /*!<@brief PORT pin number */
+#define JTAG_TCLK_PIN_MASK (1U << 0U)      /*!<@brief PORT pin mask */
+                                           /* @} */
 
 /*! @name PORTA1 (number 51), JTAG_TDI
   @{ */
@@ -178,6 +154,27 @@ void BOARD_InitBootPins(void);
 #define JTAG_TMS_PIN_MASK (1U << 3U)      /*!<@brief PORT pin mask */
                                           /* @} */
 
+/*! @name VDD67 (number 56), VDD_056
+  @{ */
+/* @} */
+
+/*! @name VSS68 (number 57), VSS_057
+  @{ */
+/* @} */
+
+/*! @name PORTA13 (number 65), PS_HV_EN
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define PS_HV_EN_GPIO GPIOA                /*!<@brief GPIO peripheral base pointer */
+#define PS_HV_EN_GPIO_PIN_MASK (1U << 13U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define PS_HV_EN_PORT PORTA                /*!<@brief PORT peripheral base pointer */
+#define PS_HV_EN_PIN 13U                   /*!<@brief PORT pin number */
+#define PS_HV_EN_PIN_MASK (1U << 13U)      /*!<@brief PORT pin mask */
+                                           /* @} */
+
 /*! @name PORTA14 (number 66), USB_UART_TX
   @{ */
 
@@ -195,6 +192,54 @@ void BOARD_InitBootPins(void);
 #define USB_UART_RX_PIN 15U                   /*!<@brief PORT pin number */
 #define USB_UART_RX_PIN_MASK (1U << 15U)      /*!<@brief PORT pin mask */
                                               /* @} */
+
+/*! @name VDD81 (number 70), VDD_070
+  @{ */
+/* @} */
+
+/*! @name VSS82 (number 71), VSS_071
+  @{ */
+/* @} */
+
+/*! @name PORTA18 (number 72), EXTAL0
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define EXTAL0_PORT PORTA                /*!<@brief PORT peripheral base pointer */
+#define EXTAL0_PIN 18U                   /*!<@brief PORT pin number */
+#define EXTAL0_PIN_MASK (1U << 18U)      /*!<@brief PORT pin mask */
+                                         /* @} */
+
+/*! @name PORTA19 (number 73), XTAL0
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define XTAL0_PORT PORTA                /*!<@brief PORT peripheral base pointer */
+#define XTAL0_PIN 19U                   /*!<@brief PORT pin number */
+#define XTAL0_PIN_MASK (1U << 19U)      /*!<@brief PORT pin mask */
+                                        /* @} */
+
+/*! @name RESET_b (number 74), RESET_b
+  @{ */
+/* @} */
+
+/*! @name PORTB0 (number 81), HB_CM_CH1
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define HB_CM_CH1_PORT PORTB               /*!<@brief PORT peripheral base pointer */
+#define HB_CM_CH1_PIN 0U                   /*!<@brief PORT pin number */
+#define HB_CM_CH1_PIN_MASK (1U << 0U)      /*!<@brief PORT pin mask */
+                                           /* @} */
+
+/*! @name PORTB1 (number 82), HB_CM_CH2
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define HB_CM_CH2_PORT PORTB               /*!<@brief PORT peripheral base pointer */
+#define HB_CM_CH2_PIN 1U                   /*!<@brief PORT pin number */
+#define HB_CM_CH2_PIN_MASK (1U << 1U)      /*!<@brief PORT pin mask */
+                                           /* @} */
 
 /*! @name PORTB2 (number 83), EEPROM_SCL
   @{ */
@@ -214,40 +259,97 @@ void BOARD_InitBootPins(void);
 #define EEPROM_SDA_PIN_MASK (1U << 3U)      /*!<@brief PORT pin mask */
                                             /* @} */
 
-/*! @name PORTE9 (number 12), PS_SW_STATE
+/*! @name PORTB4 (number 85), HB_CM_CH3
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define HB_CM_CH3_PORT PORTB               /*!<@brief PORT peripheral base pointer */
+#define HB_CM_CH3_PIN 4U                   /*!<@brief PORT pin number */
+#define HB_CM_CH3_PIN_MASK (1U << 4U)      /*!<@brief PORT pin mask */
+                                           /* @} */
+
+/*! @name PORTB5 (number 86), HB_CM_CH4
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define HB_CM_CH4_PORT PORTB               /*!<@brief PORT peripheral base pointer */
+#define HB_CM_CH4_PIN 5U                   /*!<@brief PORT pin number */
+#define HB_CM_CH4_PIN_MASK (1U << 5U)      /*!<@brief PORT pin mask */
+                                           /* @} */
+
+/*! @name PORTB6 (number 87), HB_CM_CH5
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define HB_CM_CH5_PORT PORTB               /*!<@brief PORT peripheral base pointer */
+#define HB_CM_CH5_PIN 6U                   /*!<@brief PORT pin number */
+#define HB_CM_CH5_PIN_MASK (1U << 6U)      /*!<@brief PORT pin mask */
+                                           /* @} */
+
+/*! @name PORTB7 (number 88), HB_CM_CH6
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define HB_CM_CH6_PORT PORTB               /*!<@brief PORT peripheral base pointer */
+#define HB_CM_CH6_PIN 7U                   /*!<@brief PORT pin number */
+#define HB_CM_CH6_PIN_MASK (1U << 7U)      /*!<@brief PORT pin mask */
+                                           /* @} */
+
+/*! @name PORTB10 (number 91), HB_CM_CH7
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define HB_CM_CH7_PORT PORTB                /*!<@brief PORT peripheral base pointer */
+#define HB_CM_CH7_PIN 10U                   /*!<@brief PORT pin number */
+#define HB_CM_CH7_PIN_MASK (1U << 10U)      /*!<@brief PORT pin mask */
+                                            /* @} */
+
+/*! @name PORTB11 (number 92), HB_CM_CH8
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define HB_CM_CH8_PORT PORTB                /*!<@brief PORT peripheral base pointer */
+#define HB_CM_CH8_PIN 11U                   /*!<@brief PORT pin number */
+#define HB_CM_CH8_PIN_MASK (1U << 11U)      /*!<@brief PORT pin mask */
+                                            /* @} */
+
+/*! @name VSS104 (number 93), VSS_093
+  @{ */
+/* @} */
+
+/*! @name VDD105 (number 94), VDD_094
+  @{ */
+/* @} */
+
+/*! @name PORTC3 (number 106), SIM_CLKOUT
+  @{ */
+
+/* Symbols to be used with PORT driver */
+#define SIM_CLKOUT_PORT PORTC               /*!<@brief PORT peripheral base pointer */
+#define SIM_CLKOUT_PIN 3U                   /*!<@brief PORT pin number */
+#define SIM_CLKOUT_PIN_MASK (1U << 3U)      /*!<@brief PORT pin mask */
+                                            /* @} */
+
+/*! @name VSS118 (number 107), VSS_107
+  @{ */
+/* @} */
+
+/*! @name VDD119 (number 108), VDD_108
+  @{ */
+/* @} */
+
+/*! @name PORTC9 (number 114), PS_SW_STATE
   @{ */
 
 /* Symbols to be used with GPIO driver */
-#define PS_SW_STATE_GPIO GPIOE               /*!<@brief GPIO peripheral base pointer */
+#define PS_SW_STATE_GPIO GPIOC               /*!<@brief GPIO peripheral base pointer */
 #define PS_SW_STATE_GPIO_PIN_MASK (1U << 9U) /*!<@brief GPIO pin mask */
 
 /* Symbols to be used with PORT driver */
-#define PS_SW_STATE_PORT PORTE               /*!<@brief PORT peripheral base pointer */
+#define PS_SW_STATE_PORT PORTC               /*!<@brief PORT peripheral base pointer */
 #define PS_SW_STATE_PIN 9U                   /*!<@brief PORT pin number */
 #define PS_SW_STATE_PIN_MASK (1U << 9U)      /*!<@brief PORT pin mask */
                                              /* @} */
-
-/*! @name PORTE24 (number 45), PS_12V_VM
-  @{ */
-
-/* Symbols to be used with PORT driver */
-#define PS_12V_VM_PORT PORTE                /*!<@brief PORT peripheral base pointer */
-#define PS_12V_VM_PIN 24U                   /*!<@brief PORT pin number */
-#define PS_12V_VM_PIN_MASK (1U << 24U)      /*!<@brief PORT pin mask */
-                                            /* @} */
-
-/*! @name PORTC9 (number 114), PS_12V_EN
-  @{ */
-
-/* Symbols to be used with GPIO driver */
-#define PS_12V_EN_GPIO GPIOC               /*!<@brief GPIO peripheral base pointer */
-#define PS_12V_EN_GPIO_PIN_MASK (1U << 9U) /*!<@brief GPIO pin mask */
-
-/* Symbols to be used with PORT driver */
-#define PS_12V_EN_PORT PORTC               /*!<@brief PORT peripheral base pointer */
-#define PS_12V_EN_PIN 9U                   /*!<@brief PORT pin number */
-#define PS_12V_EN_PIN_MASK (1U << 9U)      /*!<@brief PORT pin mask */
-                                           /* @} */
 
 /*! @name PORTC10 (number 115), PS_12V_SCL
   @{ */
@@ -267,20 +369,24 @@ void BOARD_InitBootPins(void);
 #define PS_12V_SDA_PIN_MASK (1U << 11U)      /*!<@brief PORT pin mask */
                                              /* @} */
 
-/*! @name PORTC8 (number 113), PS_HV_EN
+/*! @name PORTC12 (number 117), PS_12V_EN
   @{ */
 
 /* Symbols to be used with GPIO driver */
-#define PS_HV_EN_GPIO GPIOC               /*!<@brief GPIO peripheral base pointer */
-#define PS_HV_EN_GPIO_PIN_MASK (1U << 8U) /*!<@brief GPIO pin mask */
+#define PS_12V_EN_GPIO GPIOC                /*!<@brief GPIO peripheral base pointer */
+#define PS_12V_EN_GPIO_PIN_MASK (1U << 12U) /*!<@brief GPIO pin mask */
 
 /* Symbols to be used with PORT driver */
-#define PS_HV_EN_PORT PORTC               /*!<@brief PORT peripheral base pointer */
-#define PS_HV_EN_PIN 8U                   /*!<@brief PORT pin number */
-#define PS_HV_EN_PIN_MASK (1U << 8U)      /*!<@brief PORT pin mask */
-                                          /* @} */
+#define PS_12V_EN_PORT PORTC                /*!<@brief PORT peripheral base pointer */
+#define PS_12V_EN_PIN 12U                   /*!<@brief PORT pin number */
+#define PS_12V_EN_PIN_MASK (1U << 12U)      /*!<@brief PORT pin mask */
+                                            /* @} */
 
-/*! @name VBAT (number 42), VBAT_042
+/*! @name VSS137 (number 121), VSS_121
+  @{ */
+/* @} */
+
+/*! @name VDD138 (number 122), VDD_122
   @{ */
 /* @} */
 
@@ -323,19 +429,6 @@ void BOARD_InitBootPins(void);
 #define HB_LG2_PIN_MASK (1U << 2U)      /*!<@brief PORT pin mask */
                                         /* @} */
 
-/*! @name PORTD4 (number 131), HB_LG3
-  @{ */
-
-/* Symbols to be used with GPIO driver */
-#define HB_LG3_GPIO GPIOD               /*!<@brief GPIO peripheral base pointer */
-#define HB_LG3_GPIO_PIN_MASK (1U << 4U) /*!<@brief GPIO pin mask */
-
-/* Symbols to be used with PORT driver */
-#define HB_LG3_PORT PORTD               /*!<@brief PORT peripheral base pointer */
-#define HB_LG3_PIN 4U                   /*!<@brief PORT pin number */
-#define HB_LG3_PIN_MASK (1U << 4U)      /*!<@brief PORT pin mask */
-                                        /* @} */
-
 /*! @name PORTD3 (number 130), HB_HG2
   @{ */
 
@@ -347,6 +440,19 @@ void BOARD_InitBootPins(void);
 #define HB_HG2_PORT PORTD               /*!<@brief PORT peripheral base pointer */
 #define HB_HG2_PIN 3U                   /*!<@brief PORT pin number */
 #define HB_HG2_PIN_MASK (1U << 3U)      /*!<@brief PORT pin mask */
+                                        /* @} */
+
+/*! @name PORTD4 (number 131), HB_LG3
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define HB_LG3_GPIO GPIOD               /*!<@brief GPIO peripheral base pointer */
+#define HB_LG3_GPIO_PIN_MASK (1U << 4U) /*!<@brief GPIO pin mask */
+
+/* Symbols to be used with PORT driver */
+#define HB_LG3_PORT PORTD               /*!<@brief PORT peripheral base pointer */
+#define HB_LG3_PIN 4U                   /*!<@brief PORT pin number */
+#define HB_LG3_PIN_MASK (1U << 4U)      /*!<@brief PORT pin mask */
                                         /* @} */
 
 /*! @name PORTD5 (number 132), HB_HG3
@@ -374,6 +480,14 @@ void BOARD_InitBootPins(void);
 #define HB_LG4_PIN 6U                   /*!<@brief PORT pin number */
 #define HB_LG4_PIN_MASK (1U << 6U)      /*!<@brief PORT pin mask */
                                         /* @} */
+
+/*! @name VSS150 (number 134), VSS_134
+  @{ */
+/* @} */
+
+/*! @name VDD151 (number 135), VDD_135
+  @{ */
+/* @} */
 
 /*! @name PORTD7 (number 136), HB_HG4
   @{ */
@@ -492,17 +606,8 @@ void BOARD_InitBootPins(void);
 #define HB_HG8_PIN_MASK (1U << 15U)      /*!<@brief PORT pin mask */
                                          /* @} */
 
-/*! @name PORTE25 (number 46), PS_HV_VM
-  @{ */
-
-/* Symbols to be used with PORT driver */
-#define PS_HV_VM_PORT PORTE                /*!<@brief PORT peripheral base pointer */
-#define PS_HV_VM_PIN 25U                   /*!<@brief PORT pin number */
-#define PS_HV_VM_PIN_MASK (1U << 25U)      /*!<@brief PORT pin mask */
-                                           /* @} */
-
 /*!
- * @brief 
+ * @brief Configures pin routing and optionally pin electrical features.
  *
  */
 void BOARD_InitPins(void);

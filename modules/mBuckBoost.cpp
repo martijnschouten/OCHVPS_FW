@@ -1,10 +1,10 @@
 /*
- * @project EPFL-HXL_PS_v1.1
+ * @project EPFL-HXL_PS_v1.0
  * @file    mBuckBoost.cpp
  * @brief   Author:             MBE
  *          Institute:          EPFL
  *          Laboratory:         LMTS
- *          Firmware version:   v1.11
+ *          Firmware version:   v1.09
  *          Created on:         12.02.2024
  *          Last modifications: 22.03.2024
  *
@@ -336,7 +336,7 @@ void mBuckBoost::set_output(float voltage) {
 	} else if ((voltage > 0.7) && (voltage < 12)) {
 		last_lv_set = voltage;
 		Vref = (((last_lv_set - 0.6) * 760) / 11.4);
-	} else if (voltage >= 12) {
+	} else if (voltage > 12) {
 		last_lv_set = 12;
 		Vref = (((last_lv_set - 0.6) * 760) / 11.4);
 	}
