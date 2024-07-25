@@ -1,0 +1,110 @@
+/*
+ * @project EPFL-HXL_PS_v1.1
+ * @file    EPFL-HXL_PS_v1.1_modes.txt
+ * @brief   Author:             MBE
+ *          Institute:          EPFL
+ *          Laboratory:         LMTS
+ *          Firmware version:   v1.11
+ *          Created on:         12.02.2024
+ *          Last modifications: 22.03.2024
+ *
+ * HXL_PS © 2021-2024 by MBE
+ *
+ * This program is free software: you can redistribute it and/or modify it under the terms of the GNU Lesser 
+ * General Public License as published by the Free Software Foundation, either version 3 of the License, or 
+ * (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the 
+ * implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public 
+ * License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with this library.  If not, see:
+ * <http://www.gnu.org/licenses/>.
+ *
+ * NO HELP WILL BE GIVEN IF YOU MODIFY THIS CODE !!!
+ */
+
+/************************************************************************************************************/
+		Mode 1 = DC or switching for multiple channels (in simultaneous)
+
+/------------------------------------------------------------------------------------------------------------/
+Parameters: 
+	channel =       selection of channel(s) on 8-bits value (from 0 to 255)
+	frequency =     frequency (from 0.01 to 1000 Hz)
+ 	pos_duty =      positif pulse width (from 1 to 100), but need to be higher than 2 ms !
+ 	neg_duty = 	    NOT USED - MUST BE EQUAL TO 0
+ 	pulse_phase =   NOT USED - MUST BE EQUAL TO 0
+ 	phase_shift =   NOT USED - MUST BE EQUAL TO 0
+/------------------------------------------------------------------------------------------------------------/
+Example: 
+
+> SMx 1 1 100  50 0 0 0 
+= Set mode 1 for channel 1. It will switch at 100 Hz, with a duty cycle of 50%
+
+> SMx 1 6  10  25 0 0 0 
+= Set mode 1 for channels 2 and 3. They will switch at 10 Hz with a duty cycle of 10%
+
+> SMx 1 8 100 100 0 0 0 
+= Set mode 1 for channel 4. Will be in DC (= no switching)
+
+
+
+/************************************************************************************************************/
+		Mode 2 = AC for multiple channels (in simultaneous)
+
+/------------------------------------------------------------------------------------------------------------/
+Parameters: 
+	channel =       selection of channel(s) on 4-bits value (from 0 to 127)
+	frequency =     frequency (from 0.01 to 1000 Hz)
+ 	pos_duty =      positif pulse width (from 1 to 100), but need to be higher than 2 ms !
+	neg_duty =      negatif pulse width (from 1 to 100), but need to be higher than 2 ms !
+	pulse_phase =   phase between positive and negative pulses(from 0° to 360°)
+ 	phase_shift =   NOT USED - MUST BE EQUAL TO 0
+/------------------------------------------------------------------------------------------------------------/
+Example: 
+
+> SMx 2 1 100 50 25 180 0 = 
+= Set mode 2 for full-bridge 1 (channel 1 + channel2). It will switch at 100 Hz, with a positive duty cycle  
+  of 50%, with a negative duty cycle of 25%, and phase between positive and negative pluses will be at 180°
+
+
+
+/************************************************************************************************************/
+		Mode 3 = DC or switching for multiple channels (in simultaneous or with a phase shift)
+
+/------------------------------------------------------------------------------------------------------------/
+Parameters: 
+	channel =       selection of channel(s) on 4-bits value (from 0 to 127)
+	frequency =     frequency (from 0.01 to 200Hz)
+ 	pos_duty =      positif pulse width (from 1 to 100), but need to be higher than 2 ms !
+ 	neg_duty = 	    NOT USED - MUST BE EQUAL TO 0
+ 	pulse_phase =   NOT USED - MUST BE EQUAL TO 0
+	phase_shift =   phase between two or multiples channels (from 0° to 360°)
+/------------------------------------------------------------------------------------------------------------/
+Example: 
+
+> SMx 3 7 50 50 0 0 120 
+= Set mode 1 for channels 1 and 2. They will switch at 50 Hz, with a duty cycle of 50%
+  The second channel will be dephased by 120 compare to the first channel. 
+
+
+
+/************************************************************************************************************/
+		Mode 4 = AC for multiple channels (in simultaneous or with a phase shift)
+
+/------------------------------------------------------------------------------------------------------------/
+Parameters: 
+	channel =       selection of channel(s) on 4-bits value (from 0 to 127)
+	frequency =     frequency (from 0.01 to 200Hz)
+ 	pos_duty =      positif pulse width (from 1 to 100), but need to be higher than 2 ms !
+	neg_duty =      negatif pulse width (from 1 to 100), but need to be higher than 2 ms !
+	pulse_phase =   phase between positive and negative pulses(from 0° to 360°)
+	phase_shift =   phase between two or multiples channels (from 0° to 360°)
+
+/------------------------------------------------------------------------------------------------------------/
+Example: 
+
+> SMx 4 3 100 50 50 180 90
+= Set mode 4 for full-bridges 1 and 2. The first full-bridge will switch at 100 Hz, with a positive duty cycle  
+  of 50%, with a negative duty cycle of 25%, and phase between positive and negative pluses will be at 180°. 
+  The second full-bridge will be dephased by 90 compare to the first full-bridge. 
